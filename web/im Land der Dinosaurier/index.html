@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>im Land der Dinosaurier</title>
+    <meta name="description" content="Plataforma do disney plus" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.ico" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- *currently set to "Roboto". Feel free to change it to whatever you like* -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS STYLE LINK -->
+    <link rel="stylesheet" href="styles/global.css" />
+
+
+    <script>
+      function redirectToPage() {
+        window.location.href = "https://www.dropbox.com/scl/fi/6kozxf9ugjiooz5q6chop/Im-Land-der-Dinosaurier.mp4?rlkey=ohn1573vcfvcp6bolmkq04zoc&dl=0"; // Hier die gewünschte URL einfügen
+      }
+    </script>
+    
+  </head>
+  <body>
+    <div id="app">
+      <div class="app__image">
+        <img
+          loading="lazy"
+          alt="Ausgewähltes Filmbild"
+          src="https://m.media-amazon.com/images/S/pv-target-images/986c586a47c06a0514f725f565f28b1dd829e2c24a22f7d4a0d4726a1177de70._UR1920,1080_.jpg"
+        />
+      </div>
+
+      <header>
+        <img src="assets/logo.png" alt="Disney Plus-Logo" />
+
+        <button type="button" class="button__menu" onclick="changeButtonMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="navigation">
+          <h2>Filme</h2>
+
+          <form class="form" id="add__movie">
+            <input type="text" placeholder="Suche" name="movie" />
+
+            <button type="submit">
+              +
+            </button>
+          </form>
+
+          <ul id="movies">
+
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="feature__movie">
+          <div class="rating">
+            <img src="assets/logo-imdb.png" alt="Logo da IMDB" />
+            <strong>7.877</strong>
+          </div>
+
+          <!-- DATA DE LANÇAMENTO, CATEGORIA -->
+          <span>2006 – Animation – Film</span>
+          <!-- TITULO DO FILME -->
+          <h1></h1>
+          <!-- SINOPSE DO FILME -->
+          <p>Der 13-jährige Lucas will seinen Vater besuchen. Dafür muss er in einem Flugzeug reisen. Während des Flugs gibt es Turbulenzen, und Lucas verliert das Bewusstsein. Als er wieder erwacht, findet er sich auf einer Insel mitten im Meer wieder. Kurz darauf macht er eine riesige Entdeckung: Es leben Dinosaurier auf der Insel! Lucas ist mit der Situation komplett überfordert. Er trifft Kathryn. Diese behauptet, schon länger auf der Insel zu sein und aus den 1950er Jahren zu kommen.</p>
+
+          <button onclick="window.location.href = 'https://www.dropbox.com/scl/fi/6kozxf9ugjiooz5q6chop/Im-Land-der-Dinosaurier.mp4?rlkey=ohn1573vcfvcp6bolmkq04zoc&dl=0';">
+            <img src="assets/icon-play.png" alt="Icon play">
+            jetzt Schauen</button>
+
+        </section>
+
+      </main>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

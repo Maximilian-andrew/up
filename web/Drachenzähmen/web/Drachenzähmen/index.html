@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Drachenzähmen</title>
+    <meta name="description" content="Plataforma do disney plus" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.ico" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- *currently set to "Roboto". Feel free to change it to whatever you like* -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS STYLE LINK -->
+    <link rel="stylesheet" href="styles/global.css" />
+
+
+    <script>
+      function redirectToPage() {
+        window.location.href = ""; // Hier die gewünschte URL einfügen
+      }
+    </script>
+    
+  </head>
+  <body>
+    <div id="app">
+      <div class="app__image">
+        <img
+          loading="lazy"
+          alt="Ausgewähltes Filmbild"
+          src="file:///C:/Users/Max/OneDrive/Desktop/Startseite/web/Drachenz%C3%A4hmen/vorschau1.jpg"
+        />
+      </div>
+
+      <header>
+        <img src="assets/logo.png" alt="Disney Plus-Logo" />
+
+        <button type="button" class="button__menu" onclick="changeButtonMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="navigation">
+          <h2>Filme</h2>
+
+          <form class="form" id="add__movie">
+            <input type="text" placeholder="Suche" name="movie" />
+
+            <button type="submit">
+              +
+            </button>
+          </form>
+
+          <ul id="movies">
+
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="feature__movie">
+          <div class="rating">
+            <img src="assets/logo-imdb.png" alt="Logo da IMDB" />
+            <strong>7.877</strong>
+          </div>
+
+          <!-- DATA DE LANÇAMENTO, CATEGORIA -->
+          <span>2006 – Animation – Film</span>
+          <!-- TITULO DO FILME -->
+          <h1></h1>
+          <!-- SINOPSE DO FILME -->
+          <p>Das Wikinkerdorf Berk wird von Drachen angegriffen. So bekommt der schwächliche, aber kluge Häuptlingssohn Hicks die einmalige Chance, allen zu beweisen, was tatsächlich in ihm steckt. Hicks schießt einen Nachtschatten, einen der gefährlichsten Drachenarten, ab. Damit beginnt jedoch eine ungewöhnliche Freundschaft zwischen den beiden und in Hicks Leben ist fortan nichts mehr wie zuvor. Denn Wikinger und Drachen dürfen nicht befreundet sein.
+          </p>
+
+          <button onclick="window.location.href = 'https://www.dropbox.com/scl/fi/lbcgr0a9jzu4xgaq73xpe/Drachenz-hmen-leicht-gemacht.mp4?rlkey=h7t8wcbih6leni31pfslcp4gn&dl=0';">
+            <img src="assets/icon-play.png" alt="Icon play">
+            jetzt Schauen</button>
+
+        </section>
+
+      </main>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

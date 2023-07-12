@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>willkommen im wunder park</title>
+    <meta name="description" content="Plataforma do disney plus" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.ico" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- *currently set to "Roboto". Feel free to change it to whatever you like* -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS STYLE LINK -->
+    <link rel="stylesheet" href="styles/global.css" />
+
+
+    <script>
+      function redirectToPage() {
+        window.location.href = ""; // Hier die gewünschte URL einfügen
+      }
+    </script>
+    
+  </head>
+  <body>
+    <div id="app">
+      <div class="app__image">
+        <img
+          loading="lazy"
+          alt="Ausgewähltes Filmbild"
+          src="https://image.tmdb.org/t/p/w1280/4mECSL1X5qyfCLO82SCx8JxSXTQ.jpg"
+        />
+      </div>
+
+      <header>
+        <img src="assets/logo.png" alt="Disney Plus-Logo" />
+
+        <button type="button" class="button__menu" onclick="changeButtonMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="navigation">
+          <h2>Filme</h2>
+
+          <form class="form" id="add__movie">
+            <input type="text" placeholder="Suche" name="movie" />
+
+            <button type="submit">
+              +
+            </button>
+          </form>
+
+          <ul id="movies">
+
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="feature__movie">
+          <div class="rating">
+            <img src="assets/logo-imdb.png" alt="Logo da IMDB" />
+            <strong>7.877</strong>
+          </div>
+
+          <!-- DATA DE LANÇAMENTO, CATEGORIA -->
+          <span>2006 – Animation – Film</span>
+          <!-- TITULO DO FILME -->
+          <h1></h1>
+          <!-- SINOPSE DO FILME -->
+          <p>Bei diesem Film heißt es Anschnallen für ein Abenteuer. Ein junges Mädchen namens June macht eine unglaubliche Entdeckung: Der Freizeitpark ihrer Träume wird zum Leben erweckt. Gefüllt mit den aufregendsten Achterbahnen und geführt von den lustigsten Tieren, scheint das Vergnügen dort nie zu enden. Doch als Ärger auftaucht, müssen June und ihre tierischen Freunde alles tun, um den Park zu retten.</p>
+
+          <button onclick="window.location.href = 'https://www.dropbox.com/scl/fi/83j62b4j4bpvcyaa290fs/Source-Code.mp4?rlkey=7zf01i6t7z23vgfq6up9oj8ez&dl=0';">
+            <img src="assets/icon-play.png" alt="Icon play">
+            jetzt Schauen</button>
+
+        </section>
+
+      </main>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
